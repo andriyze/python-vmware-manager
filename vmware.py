@@ -170,7 +170,7 @@ def main():
          sys.exit()
 
       si = None
-      context = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
+      context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
       context.verify_mode = ssl.CERT_NONE
       try:
          si = SmartConnect(host=args.host,
